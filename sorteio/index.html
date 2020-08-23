@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Amigo Secreto</title>
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	</head>
+
+<body>
+	
+		<header>
+			<div class="container">
+			</div>
+		</header>
+		<main>
+			<section class="container-section">
+				<h2>Amigo Secreto</h2>
+			</section>
+		</main>
+
+		<main>
+			<section class="tabela">
+				<div>
+					<div id="div_esquerda">
+						<table id="tabela-esquerda">
+							<thead>
+								<tr>
+									<th id="num1">Participantes</th>
+								</tr>
+							</thead>
+							<tbody id="participantes">
+								
+							</tbody>
+						</table>
+						
+					</div>
+					<div id="div_direita">
+						<table id="tabela-direita">
+							<thead>
+								<tr>
+									<th id="num2">Pessoa Sorteada</th>
+								</tr>
+							</thead>
+							<tbody id="sorteados">
+		
+							</tbody>
+						</table>
+						
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<main>
+			<section class="container-membro">
+				<div id="esquerda">
+					<h1 id="adicionar">Adicionar participante</h1>
+					<form id="form-adiciona">
+						<div class="">
+							<br><label for="nome"><input id="nome" name="nome" type="text" placeholder="Digite o nome" class="campo"></label>
+							
+						</div>
+					</form>
+					<div>
+						<button id="adicionar-participante"
+						onclick="pegaNome()"
+						class="botao bto-principal">Adicionar</button>
+					</div>
+					
+				</div>
+				<div id="direita">
+					<h1 id="sorteio">Sortear participantes</h1>
+					<img src="css/seta.gif" width=2.3% height=10%>
+					<button onclick = "sorteiaNome()" id="sortear-pessoa" class="botao bto-principal">Sortear</button>
+				</div>
+
+			</section>
+		</main>
+		<header>
+			<div class="container">
+			</div>
+		</header>
+
+		
+		<script src="js/sorteio.js"></script>
+</body>
+</html>
